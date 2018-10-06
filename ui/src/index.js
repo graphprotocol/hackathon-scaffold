@@ -6,6 +6,7 @@ import { ApolloProvider } from 'react-apollo'
 import { apolloClient } from './apollo'
 
 import App from './App'
+import registerServiceWorker from './registerServiceWorker'
 
 ReactDOM.render(
   <MuiThemeProvider theme={createMuiTheme({ palette: { type: 'dark' } })}>

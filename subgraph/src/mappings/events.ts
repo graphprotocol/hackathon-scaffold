@@ -9,7 +9,6 @@ export function handleEvent(event: LogEvent): void {
   let eventID = event.params._name
 
   eventEntity.setString('id', eventID)
-  // eventEntity.setBytes('blockHash', event.blockHash)
 
   store.set('Event', eventID, eventEntity)
 }

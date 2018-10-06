@@ -2,29 +2,12 @@ import React, { Component } from 'react'
 import gql from 'graphql-tag'
 import { Query } from 'react-apollo'
 
-import Layout from './pages/Layout/Layout'
+import Layout from './components/Layout/Layout'
 
-// const GET_BIDS = gql`
-//   {
-//     bids {
-//       id
-//       amount
-//       timestamp
-//       bidder {
-//         id
-//       }
-//       auction {
-//         id
-//       }
-//     }
-//   }
-// `
-
-const GET_BIDS = gql`
+const GET_EVENTS = gql`
   {
-    users {
+    events {
       id
-      name
     }
   }
 `
@@ -32,11 +15,10 @@ const GET_BIDS = gql`
 class App extends Component {
   render() {
     return (
-      <Query query={GET_BIDS}>
+      <Query query={GET_EVENTS}>
         {({ loading, error, data }) => {
           if (loading) return ''
           if (error) return `Error! ${error.message}`
-
           return <Layout data={data} />
         }}
       </Query>

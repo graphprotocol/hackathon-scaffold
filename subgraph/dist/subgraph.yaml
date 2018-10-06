@@ -1,0 +1,22 @@
+specVersion: 0.0.1
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: Events
+    source:
+      address: '0xDe51f7EEA80C098236D2c62403eE5C502bf7f224'
+      abi: Events
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.1
+      language: wasm/assemblyscript
+      file: Events/Events.wasm
+      entities:
+        - Event
+      abis:
+        - name: Events
+          file: Events/abis/Events.json
+      eventHandlers:
+        - event: LogEvent(string)
+          handler: handleEvent
