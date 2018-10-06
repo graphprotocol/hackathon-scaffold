@@ -1,0 +1,4 @@
+type Event @entity {
+  id: ID!
+  blockHash: Bytes
+}
