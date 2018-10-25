@@ -8,7 +8,5 @@ export function handleEvent(event: LogEvent): void {
   let eventEntity = new Entity()
   let eventID = event.params._name
 
-  eventEntity.setString('id', eventID)
-
   store.set('Event', eventID, eventEntity)
 }

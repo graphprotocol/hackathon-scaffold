@@ -7,11 +7,7 @@ import {
   Entity,
   Bytes,
   Address,
-  I128,
-  U128,
-  I256,
-  U256,
-  H256
+  BigInt
 } from "@graphprotocol/graph-ts";
 
 export class LogEvent extends EthereumEvent {
