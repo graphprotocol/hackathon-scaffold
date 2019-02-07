@@ -1,5 +1,5 @@
 {
-  "name": "test-subgraph",
+  "name": "scaffold",
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/ subgraph.yaml",
     "build": "graph build subgraph.yaml",

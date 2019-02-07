@@ -41,7 +41,7 @@ Open 7 terminal tabs, and follow the steps in each tab:
 
 1.  Run `$ ganache-cli`
 
-2.  Make sure you are inside of the ethereum folder and run `$ truffle compile` followed by `$ truffle migrate`
+2.  Make sure you are inside of the ethereum folder and run `$ truffle compile` followed by `$ truffle migrate`. Copy the contract address and paste it inside of the `subgraph.yaml` under `address`.
 
 3.  Make sure you are inside of the ui folder and then you can run the following:
 
@@ -66,7 +66,9 @@ cargo run -p graph-node --release -- \
 
 This will spin up a GraphQL interface at `http://localhost:8000` so you can run your queries against the blockchain.
 
-7.  Make sure you are inside of the subgraph folder, and run `yarn` followed by `yarn deploy`. It will deploy the subgraph to `graph-node` and watch for changes.
+7.  Make sure you are inside of the subgraph folder, and run `yarn` followed by `yarn create-subgraph` and then `yarn deploy`. It will deploy the subgraph to `graph-node` and watch for changes.
+
+**NOTE**: You can find these instructions [here](https://www.notion.so/thegraph/Truffle-and-Ganache-Workflow-e3938e9e68fd47c6815855c7d321ab90) too.
 
 ## License
 
