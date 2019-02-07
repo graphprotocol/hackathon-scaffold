@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.5.0;
 
 contract Events {
   constructor() public {
@@ -9,7 +9,7 @@ contract Events {
     string  _name
   );
 
-  function trigger(string name) public {
+  function trigger(string memory name) public {
     emit LogEvent(name);
   }
 }
