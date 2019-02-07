@@ -5,7 +5,7 @@ dataSources:
   - kind: ethereum/contract
     name: Events
     source:
-      address: '0x5b5bf9c41964Ec0903AE76f56f6d41d871d4B99B'
+      address: '0x78aF24a6fd8CA050E75856466c6B4a4e8Accf98d'
       abi: Events
     mapping:
       kind: ethereum/events

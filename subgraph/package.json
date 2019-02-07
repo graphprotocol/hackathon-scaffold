@@ -3,9 +3,10 @@
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/ subgraph.yaml",
     "build": "graph build subgraph.yaml",
+    "create-subgraph": "graph create scaffold --node http://127.0.0.1:8020",
     "build-ipfs": "graph build --ipfs /ip4/127.0.0.1/tcp/5001 subgraph.yaml",
     "build-wast": "graph build -t wast subgraph.yaml",
-    "deploy": "graph deploy test-subgraph --verbosity debug --node http://127.0.0.1:8020/ --ipfs http://127.0.0.1:5001"
+    "deploy": "graph deploy scaffold --verbosity debug --node http://127.0.0.1:8020/ --ipfs http://127.0.0.1:5001"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "0.7.1",
